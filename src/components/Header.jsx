@@ -102,76 +102,48 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
-      <div
-        className={`fixed inset-0 z-40 pointer-events-none transition-opacity duration-300 ${
-          mobileMenuOpen ? '' : 'pointer-events-none'
-        }`}
-        role="presentation"
-      >
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
         <div
-          className={`absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 backdrop-blur-sm ${
-            mobileMenuOpen ? 'opacity-100 pointer-events-auto' : ''
-          }`}
+          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm"
           onClick={() => setMobileMenuOpen(false)}
+          role="presentation"
         />
-        <aside
-          className={`absolute top-0 right-0 h-full w-72 max-w-[85vw] bg-white shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${
-            mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          {/* Menu Header */}
-          <div className="flex items-center justify-between px-5 py-5 border-b border-gray-100">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                </svg>
-              </div>
-              <div className="leading-tight">
-                <p className="text-sm font-bold text-text-dark">Shree Bhagwant</p>
-                <p className="text-[10px] text-text-body tracking-wide">Superspeciality Hospital</p>
-              </div>
-            </div>
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              aria-label="Close menu"
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-            >
-              <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+      )}
 
-          {/* Menu Links */}
-          <nav className="flex flex-col px-4 py-5 gap-1 flex-1 overflow-y-auto">
-            {navLinks.map(link => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => handleNavClick(link.href)}
-                className="mob-nav-link group flex items-center gap-3 text-text-body hover:text-primary hover:bg-primary-light text-sm font-medium px-4 py-3.5 rounded-xl transition-colors duration-200"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover:bg-primary transition-colors duration-200" />
-                {link.label === 'About' ? 'About Us' : link.label === 'Doctors' ? 'Our Doctors' : link.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* Menu Call Button */}
-          <div className="px-4 pb-8 pt-2">
+      {/* Mobile Dropdown Panel */}
+      <div
+        className={`fixed top-16 left-0 right-0 z-50 lg:hidden bg-white shadow-xl transition-all duration-300 ease-in-out origin-top overflow-hidden ${
+          mobileMenuOpen ? 'max-h-screen opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2 pointer-events-none'
+        }`}
+        aria-hidden={!mobileMenuOpen}
+      >
+        {/* Menu Links */}
+        <nav className="flex flex-col px-4 pt-3 pb-2 gap-0.5" aria-label="Mobile navigation">
+          {navLinks.map(link => (
             <a
-              href="tel:7057993990"
-              className="mob-nav-link flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-dark text-white font-semibold py-4 rounded-2xl transition-colors duration-200 shadow-md"
+              key={link.href}
+              href={link.href}
+              onClick={() => handleNavClick(link.href)}
+              className="mob-nav-link flex items-center text-text-body hover:text-primary hover:bg-primary-light text-sm font-medium px-4 py-2.5 rounded-xl transition-colors duration-200"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call: 70579 93990
+              {link.label === 'About' ? 'About Us' : link.label === 'Doctors' ? 'Our Doctors' : link.label}
             </a>
-          </div>
-        </aside>
+          ))}
+        </nav>
+
+        {/* Menu Call Button */}
+        <div className="px-4 pb-4 pt-1">
+          <a
+            href="tel:7057993990"
+            className="mob-nav-link flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-2xl transition-colors duration-200 shadow-md"
+          >
+            <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Call: 70579 93990
+          </a>
+        </div>
       </div>
     </>
   )
