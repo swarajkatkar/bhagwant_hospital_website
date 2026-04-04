@@ -70,7 +70,7 @@ export default function About() {
               </div>
             </div>
             <div className="absolute -top-4 -left-4 sm:left-4 bg-primary text-white rounded-2xl shadow-lg px-5 py-4 text-center">
-              <p className="text-2xl font-extrabold leading-none">15+</p>
+              <p className="text-2xl font-extrabold leading-none">10+</p>
               <p className="text-[10px] font-medium mt-0.5 tracking-wide uppercase opacity-90">Years of Care</p>
             </div>
           </div>
@@ -139,8 +139,8 @@ export default function About() {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-gray-100 rounded-2xl overflow-hidden border border-gray-100">
               {[
-                { value: '15+', label: 'Years of Excellence' },
-                { value: '5000+', label: 'Successful Surgeries' },
+                { value: '10+', label: 'Years of Excellence' },
+                { value: '10000+', label: 'Successful Surgeries' },
                 { value: '25', label: 'Bed ICU & Trauma Unit' },
                 { value: '24/7', label: 'Emergency Services' },
               ].map((stat, i) => (

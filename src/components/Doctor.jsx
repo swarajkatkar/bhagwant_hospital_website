@@ -17,7 +17,7 @@ const doctors = [
     ],
     expertise: ['Keyhole Brain Surgery', 'Neuroendoscopy', 'Spine Surgery', 'Brain Tumour Surgery', 'Epilepsy Surgery', 'Trauma & Stroke', 'NCV & EEG'],
     achievements: [
-      '1,000+ successful brain & spine surgeries',
+      '5,000+ successful brain & spine surgeries',
       'Pioneer of Neuroendoscopy in the Barshi–Solapur region',
       'Member — Neurological Society of India (NSI)'
     ],

@@ -83,12 +83,11 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-5 drop-shadow-xl">
-          Shree Bhagwant
-          <br />
-          <span className="text-blue-300">Superspeciality</span> Hospital
-        </h1>
-
+<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-blue-600 leading-[1.1] tracking-tight mb-5 drop-shadow">
+  Shree Bhagwant
+  <br />
+  Superspeciality Hospital
+</h1>
         {/* Subheading */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/85 font-light mb-10 max-w-2xl leading-relaxed">
           Advanced Neuro &amp; Orthopaedic Care in Barshi
@@ -106,7 +105,7 @@ export default function Hero() {
             Call Now
           </a>
           <a
-            href="https://maps.google.com/?q=Gate+No+634+Bhagwant+Colony+Barshi+413401"
+            href="https://www.google.com/maps/place/Shree+Bhagwant+Superspeciality+Hospital/@18.2220185,75.6829567,946m/data=!3m1!1e3!4m9!1m2!2m1!1sGate+No+634+Bhagwant+Colony+Barshi+413401!3m5!1s0x3bc4553e9978907d:0x728132d57341566!8m2!3d18.2214644!4d75.683003!16s%2Fg%2F11mtjlb4r0?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-base px-8 py-4 rounded-full border-2 border-white/40 hover:border-white/75 transform hover:-translate-y-0.5 transition-all duration-200"

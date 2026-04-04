@@ -29,7 +29,7 @@ const highlightData = [
   {
     icon: 'neuro-cath',
     title: 'Neuro Cath Lab',
-    subtitle: 'First in Solapur District',
+    subtitle: 'Advanced Stroke Unit',
   },
 ]
 

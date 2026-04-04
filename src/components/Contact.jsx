@@ -145,7 +145,7 @@ export default function Contact() {
                 Call Now
               </a>
               <a
-                href="https://maps.google.com/?q=Bhagwant+Colony+Barshi+413401"
+                href="https://www.google.com/maps/place/Shree+Bhagwant+Superspeciality+Hospital/@18.2220185,75.6829567,946m/data=!3m1!1e3!4m6!3m5!1s0x3bc4553e9978907d:0x728132d57341566!8m2!3d18.2214644!4d75.683003!16s%2Fg%2F11mtjlb4r0?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white text-sm font-semibold py-3.5 rounded-2xl transition-all duration-200"
@@ -162,7 +162,7 @@ export default function Contact() {
             <div className="rounded-2xl overflow-hidden border border-border shadow-sm aspect-video">
               <iframe
                 title="Hospital Location"
-                src="https://maps.google.com/maps?q=Barshi,+Maharashtra,+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Barshttps://www.google.com/maps/place/Shree+Bhagwant+Superspeciality+Hospital/@18.2220185,75.6829567,946m/data=!3m1!1e3!4m6!3m5!1s0x3bc4553e9978907d:0x728132d57341566!8m2!3d18.2214644!4d75.683003!16s%2Fg%2F11mtjlb4r0?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3Dhi,+Maharashtra,+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen=""

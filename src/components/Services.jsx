@@ -5,6 +5,7 @@ const services = [
     title: 'Neurosurgery',
     description: 'Advanced brain & spine surgery using cutting-edge technology with a dedicated 25-bed Trauma & Stroke ICU.',
     features: [
+      'Advanced Neuro Cath Lab',
       'Modular OT with Laminar Air Flow',
       'Leica Microscope & Neuro Navigation',
       'Stryker Endoscopy (Brain & Spine)',

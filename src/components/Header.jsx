@@ -43,12 +43,12 @@ export default function Header() {
                />
               <div className="flex flex-col leading-tight">
                 <span id="logo-name" className={`text-sm sm:text-base font-bold transition-colors duration-300 ${
-                  isScrolled ? 'text-text-dark' : 'text-white'
+                  isScrolled ? 'text-text-dark' : 'text-blue-600'
                 }`}>
                   Shree Bhagwant
                 </span>
                 <span id="logo-sub" className={`text-[10px] sm:text-xs font-medium tracking-wide transition-colors duration-300 ${
-                  isScrolled ? 'text-text-body' : 'text-white/75'
+                  isScrolled ? 'text-text-body' : 'text-blue-600'
                 }`}>
                   Superspeciality Hospital
                 </span>
