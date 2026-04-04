@@ -29,7 +29,7 @@ const doctors = [
     specialty: 'Orthopaedic Surgeon',
     degree: 'MBBS, D. Ortho',
     training: 'Joint Replacement (Mumbai) · Arthroscopy (Pune)',
-    image: 'https://res.cloudinary.com/dt4mqa1ba/image/upload/v1775300572/dr-sumit_iamuca.png',
+    image: 'https://res.cloudinary.com/dt4mqa1ba/image/upload/v1775314302/a2e1c810-368c-4bc8-910e-b123dee978dc.png',
     description: 'Orthopaedic surgeon specializing in joint replacement, arthroscopy, and sports injury management. Fellowship trained at leading centres in Mumbai and Pune.',
     about: 'Dr. Sumit D. Padwal is an experienced Orthopaedic Surgeon with specialized fellowship training in Joint Replacement from Mumbai and Arthroscopy & Sports Injury from Pune. He brings advanced orthopaedic expertise to the Barshi region.',
     qualifications: [
