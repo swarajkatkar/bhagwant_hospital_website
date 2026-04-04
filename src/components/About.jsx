@@ -93,12 +93,12 @@ export default function About() {
             <ul className="space-y-4 mb-10">
               {[
                 {
-                  title: 'Multispeciality Hospital in Barshi',
+                  title: 'Super-speciality Hospital in Barshi',
                   desc: 'Comprehensive care under one roof — neurology, orthopaedics, physiotherapy & more.',
                 },
                 {
                   title: 'Advanced Infrastructure',
-                  desc: 'Siemens MRI, GE CT Scan, Leica Microscope & Stryker Endoscopy systems.',
+                  desc: 'Neuro cath lab, Siemens MRI, GE CT Scan, Leica Microscope & Stryker Endoscopy systems.',
                 },
                 {
                   title: 'Modular Operation Theatres',
