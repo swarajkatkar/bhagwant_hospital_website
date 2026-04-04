@@ -70,7 +70,7 @@ export default function NeuroHighlight() {
                 Shree Bhagwant Superspeciality Hospital features a{' '}
                 <span className="font-bold text-primary">state-of-the-art Neuro Cath Lab</span> —{' '}
                 <span className="font-bold text-primary">the first and only facility of its kind</span> in the{' '}
-                <span className="font-bold text-primary">entire Solapur district</span> that can rotate upto 180 °. This advanced technology enables{' '}
+                <span className="font-bold text-primary">entire Region</span> that can rotate upto 180 °. This advanced technology enables{' '}
                 <span className="font-bold text-primary">precise diagnosis</span> and minimally invasive treatment of{' '}
                 <span className="font-bold text-primary">brain and stroke-related conditions</span>, ensuring{' '}
                 <span className="font-bold text-primary">safer procedures</span> and faster recovery for patients.{' '}

@@ -9,7 +9,7 @@ const doctors = [
     training: 'NIMHANS · Fellowship in Neuroendoscopy',
     image: 'https://res.cloudinary.com/dt4mqa1ba/image/upload/v1775300571/dr-amit_tpfn3q.png',
     description: 'Senior Neurosurgeon specializing in keyhole brain & spine surgery, neuroendoscopy, and complex trauma management. Trained at India\'s premier neuroscience institute.',
-    about: 'Dr. Amit D. Padwal is a highly accomplished Neurosurgeon trained at NIMHANS, Bengaluru — India\'s foremost neuroscience institution. With over 15 years of surgical experience, he has performed more than 1,000 brain and spine procedures, bringing world-class neurosurgical expertise to the Barshi region.',
+    about: 'Dr. Amit D. Padwal is a highly accomplished Neurosurgeon trained at NIMHANS, Bengaluru — India\'s foremost neuroscience institution. With over 15 years of surgical experience, he has performed more than 5,000 brain and spine procedures, bringing world-class neurosurgical expertise to the Barshi region.',
     qualifications: [
       'M.S. (General Surgery)',
       'M.Ch. (Neurosurgery) — NIMHANS, Bengaluru',
