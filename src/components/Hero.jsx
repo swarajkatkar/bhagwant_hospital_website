@@ -83,11 +83,10 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-5 drop-shadow-xl hospital-name-cyan">
-          Shree Bhagwant
-          <br />
-          Superspeciality Hospital
-        </h1>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#00BFFF] drop-shadow-[0_4px_10px_rgba(0,0,0,0.4)]">
+  Shree Bhagwant <br />
+  Superspeciality Hospital
+</h1>
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/85 font-light mb-10 max-w-2xl leading-relaxed">
